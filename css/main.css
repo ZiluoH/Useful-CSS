@@ -1,0 +1,8 @@
+#eg2 p{
+	user-select: none;
+}
+
+#eg3 p::selection{
+	color:red;
+	
+}
