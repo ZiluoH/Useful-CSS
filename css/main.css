@@ -1,8 +1,78 @@
+ol li.list-group-item{
+	list-style: decimal inside;
+	display: list-item;
+}
+
+.demo{
+	background-color: #f5f6f9;
+	border-radius: 0.25rem;
+	padding: 1.75rem 2.25rem;
+	margin: 2rem 0;
+}
+
+/*eg*/
+#eg1Input input:focus{
+	outline: none;
+}
+
 #eg2 p{
 	user-select: none;
 }
 
 #eg3 p::selection{
-	color:red;
-	
+	color:red;	
+}
+
+/*eg4*/
+@keyframes bouncing-loader{
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0.1;
+		transform: translateY(-1rem);
+	}
+}
+
+#eg4 .bouncing-loader{
+	display: flex;
+	justify-content: center;
+}
+
+#eg4 .bouncing-loader > div {
+	width: 1rem;
+	height: 1rem;
+	margin: 3rem 0.2rem;
+	background: #8385aa;
+	border-radius: 50%;
+	animation: bouncing-loader 0.6s infinite alternate;
+}
+
+#eg4 .bouncing-loader div:nth-child(2){
+	animation-delay: 0.2s;
+}
+
+#eg4 .bouncing-loader div:nth-child(3){
+	animation-delay: 0.4s;
+}
+
+/*eg5*/
+@keyframes donut-spin{
+	0% {
+		transform:rotate(0deg); 
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+#eg5 .donut{
+	display: block;
+	width: 60px;
+	height: 60px;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+	border-left-color: #7983ff;
+	border-radius: 50%;
+	animation: donut-spin 1.2s linear infinite;
 }

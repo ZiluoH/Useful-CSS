@@ -16,11 +16,17 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h2>Some Useful CSS</h2>
-        <ol>
-            <li>
+        <ol class="list-group">
+            <li id="eg1" class="list-group-item">
                 <h4><code>outline</code> there is a border when input is focused</h4>
+                <div class="demo">
+                  With border <input type="text"><br><br>
+                  <div id="eg1Input">
+                  Without border <input type="text">
+                  </div>
+                </div>
                 <pre>
                     <code>
                         /*set to none normally*/
@@ -31,9 +37,9 @@
                 </pre>
             </li>
 
-            <li id="eg2">
+            <li id="eg2" class="list-group-item">
                 <h4><code>user-select</code> unable to select text</h4>
-                <p>
+                <p class="demo">
                     text cant not be selected here
                 </p>
                 <pre>
@@ -45,9 +51,9 @@
                 </pre>
             </li>
 
-            <li id="eg3">
+            <li id="eg3" class="list-group-item">
                 <h4><code>::selection</code> change the selected text color</h4>
-                <p>selected text color is red!</p>
+                <p class="demo">selected text color is red!</p>
                 <pre>
                     <code>
                         #eg3 p::selection{
@@ -57,14 +63,129 @@
                 </pre>
             </li>
 
-            <li id="eg4">
+            <li id="eg4" class="list-group-item">
                 <h4>A bouncing-loader</h4>
-                <div class="bouncing-loader">
+                <div class="bouncing-loader demo">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
+                <pre>
+                    <code>
+                        @keyframes bouncing-loader{
+                            from {
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+                            to {
+                                opacity: 0.1;
+                                transform: translateY(-1rem);
+                            }
+                        }
+
+                        #eg4 .bouncing-loader{
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        #eg4 .bouncing-loader > div {
+                            width: 1rem;
+                            height: 1rem;
+                            margin: 3rem 0.2rem;
+                            background: #8385aa;
+                            border-radius: 50%;
+                            animation: bouncing-loader 0.6s infinite alternate;
+                        }
+
+                        #eg4 .bouncing-loader div:nth-child(2){
+                            animation-delay: 0.2s;
+                        }
+
+                        #eg4 .bouncing-loader div:nth-child(3){
+                            animation-delay: 0.4s;
+                        }
+                    </code>
+                </pre>
             </li>
+
+            <li id="eg5" class="list-group-item">
+              <h4>A circle</h4>
+              <div class="demo">
+                 <div class="donut"></div>
+              </div>
+              <pre>
+                <code>
+                  @keyframes donut-spin{
+                    0% {
+                      transform:rotate(0deg); 
+                    }
+                    100% {
+                      transform:rotate(360deg);
+                    }
+                  }
+
+                  #eg5 .donut{
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    border: 5px solid rgba(0, 0, 0, 0.1);
+                    border-left-color: #7983ff;
+                    border-radius: 50%;
+                    animation: donut-spin 1.2s linear infinite;
+                  }
+                </code>
+              </pre>
+            </li>
+
+            <li id="" class="list-group-item">
+              <h4></h4>
+              <div class="demo">
+                
+              </div>
+              <pre>
+                <code>
+                  
+                </code>
+              </pre>
+            </li>
+
+            <li id="" class="list-group-item">
+              <h4></h4>
+              <div class="demo">
+                
+              </div>
+              <pre>
+                <code>
+                  
+                </code>
+              </pre>
+            </li>
+
+            <li id="" class="list-group-item">
+              <h4></h4>
+              <div class="demo">
+                
+              </div>
+              <pre>
+                <code>
+                  
+                </code>
+              </pre>
+            </li>
+
+            <li id="" class="list-group-item">
+              <h4></h4>
+              <div class="demo">
+                
+              </div>
+              <pre>
+                <code>
+                  
+                </code>
+              </pre>
+            </li>
+
+
         </ol>
     </div>
         
