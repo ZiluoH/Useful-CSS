@@ -76,3 +76,23 @@ ol li.list-group-item{
 	border-radius: 50%;
 	animation: donut-spin 1.2s linear infinite;
 }
+
+/*eg6*/
+#eg6 .demo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+#eg6 .demo div{
+	background-color: red;
+	padding: 1rem;
+}
+
+/*eg7*/
+#eg7 .equal1,
+#eg7 .equal2{
+	display: flex;
+	justify-content: space-between;
+}

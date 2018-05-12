@@ -137,26 +137,45 @@
               </pre>
             </li>
 
-            <li id="" class="list-group-item">
-              <h4></h4>
+            <li id="eg6" class="list-group-item">
+              <h4>Use <code>flexbox</code> to center element</h4>
               <div class="demo">
-                
+                <div>Centered Content</div>
               </div>
               <pre>
                 <code>
-                  
+                  #eg6 .demo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 200px;
+                  }
                 </code>
               </pre>
             </li>
 
-            <li id="" class="list-group-item">
-              <h4></h4>
+            <li id="eg7" class="list-group-item">
+              <h4>Equally distribute child element under parent element</h4>
               <div class="demo">
-                
+                <div class="equal1">
+                  <p>Item 1</p>
+                  <p>Item 2</p>
+                  <p>Item 3</p>
+                </div>
+                <div class="equal2">
+                  <p>Item1</p>
+                  <p>Item2</p>
+                  <p>Item3</p>
+                  <p>Item4</p>
+                </div>
               </div>
               <pre>
                 <code>
-                  
+                  #eg7 .equal1,
+                  #eg7 .equal2{
+                    display: flex;
+                    justify-content: space-between;
+                  }
                 </code>
               </pre>
             </li>
