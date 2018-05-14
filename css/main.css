@@ -96,3 +96,12 @@ ol li.list-group-item{
 	display: flex;
 	justify-content: space-between;
 }
+
+/*eg8*/
+#eg8 .demo p{
+	font-size: 6rem;
+	font-weight: 700;
+	background: -webkit-linear-gradient(pink, red);
+	-webkit-text-fill-color: transparent;
+  	-webkit-background-clip: text;
+}
